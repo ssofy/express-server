@@ -1,0 +1,48 @@
+{
+  "name": "@ssofy/express-server",
+  "version": "1.0.0",
+  "description": "Official SSOfy Node Express (Server) Package.",
+  "keywords": [
+    "ssofy",
+    "sso",
+    "login",
+    "auth",
+    "authentication",
+    "oauth",
+    "oauth2",
+    "sdk"
+  ],
+  "license": "MIT",
+  "author": "SSOfy <support@ssofy.com>",
+  "homepage": "https://www.ssofy.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ssofy/express-server.git"
+  },
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "prebuild": "copyfiles -u 1 src/templates/**/* build/",
+    "build": "tsc",
+    "test": "jest --verbose",
+    "start": "npm run build && ts-node ./build/test"
+  },
+  "dependencies": {
+    "@ssofy/node-sdk": "^2.4.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "@prisma/client": "^4.0.0",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.11.9",
+    "@types/validator": "^13.9.0",
+    "copyfiles": "^2.4.1",
+    "dotenv": "^16.3.1",
+    "mysql2": "^3.6.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.0.0"
+  }
+}
