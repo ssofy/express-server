@@ -1,0 +1,8 @@
+.vscode
+.vs
+.idea
+coverage
+node_modules
+package-lock.json
+build/__test__
+.env
