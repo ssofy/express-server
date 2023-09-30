@@ -35,7 +35,7 @@ const serverConfig: ServerConfig = {
     },
     otp: {
         storage: new Storage.MemoryStorage(),
-        settings: {
+        vars: {
             brand: 'SSOfy',
         },
         notifiers: [

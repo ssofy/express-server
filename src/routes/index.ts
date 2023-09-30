@@ -57,8 +57,8 @@ export default (config: ServerConfig) => {
             }
         });
 
-        for (const key in config.otp.settings as any) {
-            notifier.setVar(key, config.otp.settings[key]);
+        for (const key in config.otp.vars as any) {
+            notifier.setVar(key, config.otp.vars[key]);
         }
     });
 
