@@ -1,6 +1,6 @@
 {
   "name": "@ssofy/express-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official SSOfy Node Express (Server) Package.",
   "keywords": [
     "ssofy",
