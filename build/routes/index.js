@@ -50,8 +50,8 @@ exports.default = (config) => {
                 notifier.setTemplate(template);
             }
         });
-        for (const key in config.otp.settings) {
-            notifier.setVar(key, config.otp.settings[key]);
+        for (const key in config.otp.vars) {
+            notifier.setVar(key, config.otp.vars[key]);
         }
     });
     // setup router

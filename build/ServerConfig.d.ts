@@ -7,7 +7,7 @@ export interface ServerConfig {
     otp: {
         storage?: Storage.Storage;
         notifiers?: Notifications.Notifier[];
-        settings: {
+        vars: {
             brand: string;
             [key: string]: string;
         };
